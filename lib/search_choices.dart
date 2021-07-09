@@ -1438,6 +1438,10 @@ class _DropdownDialogState<T> extends State<DropdownDialog> {
                 });
               }
             }
+            if (item.value == 'delimeter') {
+              return (widget.displayItem == null ? item : displayItemResult)
+                  as Widget;
+            }
             return InkWell(
               onTap: () {
                 if (widget.multipleSelection) {
