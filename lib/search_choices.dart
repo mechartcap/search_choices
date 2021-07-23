@@ -950,7 +950,7 @@ class _SearchChoicesState<T> extends State<SearchChoices<T>> {
         Stack(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(widget.padding),
+              padding: EdgeInsets.symmetric(vertical: 10),
               child: result,
             ),
             widget.underline is NotGiven
